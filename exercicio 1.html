@@ -9,7 +9,6 @@
     <style>
         .container{
             border: 1px solid black;
-            
         }
 
         .topo{
@@ -17,14 +16,7 @@
             background-color: rgb(235, 235, 127);
             height: 50px;
             border: 1px solid black;
-            display: flex;
-            height: 600px;
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            flex-wrap: nowrap;
-            align-content: space-between;
-            column-gap: 10px
+            width: 1173px;
         }
 
         .sidebar{
@@ -32,29 +24,46 @@
             background-color: rgb(106, 106, 209);
             border: 1px solid black;
             width: 100px;
-            height: 650px
+            height: 500px
         }
 
         .conteudo{
-            flex-direction: row;
             background-color: rgb(90, 196, 90);
-            border: 1px solid black
+            border: 1px solid black;
+            width: 1073px;
+            height: 500px;
         }
 
-        .lado{
-            flex-direction: column;
-            align-items: flex-start;
-            display: flex
+        .rodape{
+            background-color: lightpink;
+            border: 1px solid black;
+            width: 1173px;
+            height: 50px
         }
+
+        .lado {
+            display: flex;
+        }
+
     </style>
 
 </head>
 <body>
     <div class="container">
-        <div class="topo">topo</div>
-        <div class="sidebar lado">side bar</div>
-        <div class="conteudo lado">conteudo</div>
-        <div class="rodape">rodapé</div>
+        <header>
+            <div class="topo">topo</div>
+        </header>
+        <div class="lado">
+            <aside>
+                <div class="sidebar">side bar</div>
+            </aside>
+            <main>
+                <div class="conteudo">conteudo</div>
+            </main>
+        </div>
+        <footer>
+            <div class="rodape">rodapé</div>
+        </footer>
     </div>
 </body>
 </html>

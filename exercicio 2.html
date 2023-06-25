@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            border: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            border: 1px solid black;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-items: start;
+        }
+
+        .topo{
+            background-color: rgb(235, 235, 127);
+            height: 50px;
+            border: 1px solid black;
+            width: 1073px;
+            order: 0;
+        }
+
+        .sidebar{
+            background-color: rgb(106, 106, 209);
+            border: 1px solid black;
+            width: 100px;
+            height: 600px;
+            order: -1;
+        }
+
+        .conteudo{
+            flex-direction: row;
+            background-color: rgb(90, 196, 90);
+            border: 1px solid black;
+            width: 1073px;
+            height: 500px;
+        }
+
+        .rodape{
+            background-color: lightpink;
+            border: 1px solid black;
+            width: 1073px;
+            height: 50px;
+            order: 0;
+        }
+
+        
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="sidebar">side bar</div>
+        </aside>
+        <div>
+            <header>
+                <div class="topo">topo</div>
+            </header>
+            <main>
+                <div class="conteudo">conteudo</div>
+            </main>
+            <footer>
+                <div class="rodape">rodapé</div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
